@@ -10,6 +10,7 @@
 		1419031A25DD410E003C3BFB /* BJCAWebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419031925DD410E003C3BFB /* BJCAWebImageView.m */; };
 		1419032925DD4798003C3BFB /* BJCAImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419032825DD4798003C3BFB /* BJCAImageCache.m */; };
 		1419033025DE4A0E003C3BFB /* BJCAWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419032F25DE4A0E003C3BFB /* BJCAWebImageDownloader.m */; };
+		1419033825DE5BEA003C3BFB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1419033725DE5BEA003C3BFB /* README.md */; };
 		141C9FC925CA9D9F000E5FFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141C9F7425C79A40000E5FFC /* AVFoundation.framework */; };
 		1484B13F25B079C8005CC1B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1484B13E25B079C8005CC1B8 /* AppDelegate.m */; };
 		1484B14225B079C8005CC1B8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1484B14125B079C8005CC1B8 /* SceneDelegate.m */; };
@@ -47,6 +48,7 @@
 		1419032825DD4798003C3BFB /* BJCAImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJCAImageCache.m; sourceTree = "<group>"; };
 		1419032E25DE4A0E003C3BFB /* BJCAWebImageDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJCAWebImageDownloader.h; sourceTree = "<group>"; };
 		1419032F25DE4A0E003C3BFB /* BJCAWebImageDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJCAWebImageDownloader.m; sourceTree = "<group>"; };
+		1419033725DE5BEA003C3BFB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		141C9F7425C79A40000E5FFC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		141C9F8F25C92774000E5FFC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		141C9FA425C942AA000E5FFC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -123,6 +125,7 @@
 		1484B13125B079C7005CC1B8 = {
 			isa = PBXGroup;
 			children = (
+				1419033725DE5BEA003C3BFB /* README.md */,
 				1484B13C25B079C8005CC1B8 /* test */,
 				1484B15B25B079CF005CC1B8 /* testTests */,
 				1484B16625B079CF005CC1B8 /* testUITests */,
@@ -287,6 +290,7 @@
 			files = (
 				1484B15025B079CE005CC1B8 /* LaunchScreen.storyboard in Resources */,
 				1484B14D25B079CE005CC1B8 /* Assets.xcassets in Resources */,
+				1419033825DE5BEA003C3BFB /* README.md in Resources */,
 				1484B14825B079C8005CC1B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
