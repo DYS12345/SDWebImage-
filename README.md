@@ -47,6 +47,10 @@ UIImage *cachedImage = [[BJCAImageCache sharedImageCache] imageFromKey:[url abso
 
 默认情况下，图像将存储在内存中和异步存储在磁盘中。如果只想要内存缓存可以使用-(void)storeImage:(UIImage *)image foeKey:(NSString *)key toDisk:(BOOL)toDisk;方法，将toDisk参数设为NO。
 
+动机：
 
+作者在早期的readme中写到他的动机，当他刚开始写iOS的应用程序的时候，在UITbaleView上设置从web拿图片，苹果没有提供API。
+
+作者当时搜索了很多的资料，大多数都是使用的NSURLConnection来实现的，这虽然能够工作，但是响应速度还是很慢，于是经过尝试，发现NSOperation来处理非常的快速，不会卡顿。
 
 
