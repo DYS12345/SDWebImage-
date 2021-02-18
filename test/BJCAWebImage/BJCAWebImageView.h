@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 {
     UIImage *placeHolderImage;
-    BJCAWebImageDownloader *currentOperation;
+    BJCAWebImageDownloader *downloader;
 }
 
 -(void)setImageWithURL:(NSURL *)url;

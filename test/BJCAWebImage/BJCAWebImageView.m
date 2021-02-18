@@ -14,10 +14,10 @@
 #pragma mark RemoteImageView
 -(void)setImageWithURL:(NSURL *)url
 {
-    if (currentOperation != nil)
+    if (downloader != nil)
     {
-        [currentOperation cancel];//从队列中删除
-        currentOperation = nil;
+        [downloader cancel];//从队列中删除
+        downloader = nil;
     }
     //保存占位图图像，以便在视图被重用的时候重新应用占位图
     if (placeHolderImage == nil)
@@ -36,14 +36,16 @@
     }
     else
     {
-        currentOperation = [BJCAWebImageDownloader downloaderWithURL:url target:self action:@selector(downloadFinishedWithImage:)];
+        downloader = [BJCAWebImageDownloader downloaderWithURL:url target:self action:@selector(downloadFinishedWithImage:)];
     }
 }
 
 -(void)downloadFinishedWithImage:(UIImage *)image
 {
     self.image = image;
-    currentOperation = nil;
+    downloader = nil;
+    
+    [[BJCAImageCache sharedImageCache] storeImage:image forKey:[downloader.url absoluteString]];
 }
 
 @end
