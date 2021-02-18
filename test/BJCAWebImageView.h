@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class BJCAWebImageDownloadOperation;
+@class BJCAWebImageDownloader;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,25 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 {
     UIImage *placeHolderImage;
-    BJCAWebImageDownloadOperation *currentOperation;
+    BJCAWebImageDownloader *currentOperation;
 }
 
 -(void)setImageWithURL:(NSURL *)url;
 -(void)downloadFinishedWithImage:(UIImage *)image;
-
-@end
-
-@interface BJCAWebImageDownloadOperation : NSOperation
-
-{
-    NSURL *url;
-    BJCAWebImageView *delegate;
-}
-
-@property (nonatomic, strong) NSURL *url;
-@property (nonatomic, weak) BJCAWebImageView *delegate;
-
--(id)initWithURL:(NSURL *)url delegate:(BJCAWebImageView *)delegate;
 
 @end
 
